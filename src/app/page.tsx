@@ -20,7 +20,6 @@ export default function Home() {
           src={cyberpunk_3}
           alt="Logo"
           className="w-full h-full bg-cover"
-        // style={{ transform: 'scale(1)' }} // Initial zoom state
         />
 
       </div>
