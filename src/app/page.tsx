@@ -14,14 +14,12 @@ export default function Home() {
       <Loader />
       <Header />
       <div className="h-screen w-screen">
-
         <Image
           id="img-bg"
           src={cyberpunk_3}
           alt="Logo"
           className="w-full h-full bg-cover"
         />
-
       </div>
       <div className="h-[1000px] bg-black flex justify-center items-center">
         <AudioPlayer />
