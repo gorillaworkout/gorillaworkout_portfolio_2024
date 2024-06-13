@@ -56,7 +56,7 @@ const HeaderComponent: React.FC<HeaderProps> = ({}) => {
   };
 
   return (
-    <div className={`w-full h-24 flex justify-center items-end fixed`}>
+    <div className={`w-full h-24 flex justify-center items-end fixed z-50`}>
       <div className={`w-auto flex-row gap-x-2 header-container ${isVisible ? 'flex' : 'hidden'}`}>
         <div className="flex justify-center items-center rounded-full h-12 w-12 bg-[#ffffff1a]">
           <GoNorthStar className="w-8 h-8 text-white" />

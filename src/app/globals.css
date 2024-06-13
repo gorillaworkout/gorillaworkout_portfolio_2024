@@ -99,7 +99,7 @@ body {
   fill-opacity: 0;
   stroke-width: 3px;
   stroke-dasharray: 4500;
-  animation: draw 8s ease;
+  animation: draw 5s ease;
 }
 
 @keyframes draw {
@@ -157,15 +157,30 @@ body {
 }
 
 
-/* audio player */
 
-/* styles/globals.css */
-/* body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+/* gadipake */
+#circe_route {
+  fill: transparent;
 }
 
-canvas {
-  display: block;
-} */
+#rect_route {
+  fill:transparent;
+}
+#rect text {
+  pointer-events: none;
+}
+
+#svg_route {
+  overflow: visible;
+  height: 100%;
+  transform: translateZ(0);
+}
+
+#path_route {
+  stroke-width: 2;
+  stroke: red;
+  background-color: transparent;
+  fill:transparent;
+}
+/* gadipake */

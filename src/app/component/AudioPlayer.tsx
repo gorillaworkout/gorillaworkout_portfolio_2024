@@ -14,7 +14,7 @@ const AudioPlayer: React.FC = () => {
     soundRef.current = new Howl({
       src: ['/music/homeMusic.mp3'],
       volume: 0.5,
-      autoplay: true,
+      autoplay: false,
       onend: () => setIsPlaying(true),
     });
 
@@ -23,15 +23,15 @@ const AudioPlayer: React.FC = () => {
     });
 
     timeline.fromTo(
-      ".audio-player",
+      "#btn-music",
       {
         opacity: 0,
         display: "none"
       },
       {
         opacity: 1,
-        duration: 2,
-        delay: 2,
+        duration: 4,
+        delay: 4,
         display: "flex"
       },
     );
@@ -57,7 +57,7 @@ const AudioPlayer: React.FC = () => {
 
   return (
     <div className="audio-player">
-      <button onClick={togglePlayPause} className={`${isVisible ? 'flex' : 'hidden'} flex flex-row items-center gap-x-2`}>
+      <button id="btn-music" onClick={togglePlayPause} className={`${isVisible ? 'flex' : 'hidden'}  flex-row items-center gap-x-2`}>
         {
           isPlaying ?
             <>
