@@ -183,7 +183,7 @@ body {
 /* gadipake */
 
 .rounded-circle {
-  background: transparent;
-  border:1px solid #42BFDC;
-  box-shadow: 0 0 30px 10px #42BFDC /* Adjust the color and opacity as needed */
+  background-color: rgba(66, 191, 220, 0.8);
+  border:3px solid white;
+  box-shadow: 0 0 40px 20px #42BFDC;
 }
