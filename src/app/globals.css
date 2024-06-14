@@ -160,9 +160,6 @@ body {
 
 
 /* gadipake */
-#circe_route {
-  fill: transparent;
-}
 
 #rect_route {
   fill:transparent;
@@ -184,3 +181,9 @@ body {
   fill:transparent;
 }
 /* gadipake */
+
+.rounded-circle {
+  background: transparent;
+  border:1px solid #42BFDC;
+  box-shadow: 0 0 30px 10px #42BFDC /* Adjust the color and opacity as needed */
+}
