@@ -34,7 +34,7 @@ const MenuOption: React.FC = () => {
             {
                 opacity: 1,
                 display: "flex",
-                delay: 4,
+                delay: 0.5,
                 duration: 2,
             },
         );
@@ -92,9 +92,9 @@ const MenuOption: React.FC = () => {
     return (
         <div className="menu-option w-full h-[90%]">
             <div className="absolute top-0 flex flex-row w-full h-full">
-                <div className="absolute bottom-0 left-[20%] h-[500px] w-[300px]">
-                    <div  ref={menuRounded} className={`achievement_id !z-20 p-4  top-[20%] left-[5%] flex justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
-                        <GrAchievement className={`text-white flex w-[40px] h-[40px]  `} />
+                <div className={`${isVisible ? "absolute" : "hidden"}  bottom-0 left-[20%] h-[500px] w-[300px]`}>
+                    <div  ref={menuRounded} className={`achievement_id !z-20 p-4  top-[20%] left-[5%]  justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
+                        <GrAchievement className={`text-white flex w-[40px] h-[40px]`} />
                     </div>
                     <svg
                         id="dots_id"
@@ -149,8 +149,8 @@ const MenuOption: React.FC = () => {
                         </g>
                     </svg>
                 </div>
-                <div className="absolute bottom-0 right-[0%] h-[500px] w-[300px]">
-                    <div   ref={menuRounded2} className={`achievement_id !z-20 p-4  top-0 left-[5%] flex justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
+                <div className={`${isVisible ? "absolute" : "hidden"} bottom-0 right-[0%] h-[500px] w-[300px]`}>
+                    <div   ref={menuRounded2} className={`achievement_id !z-20 p-4  top-0 left-[5%]  justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
                         <GrAchievement className={`text-white flex w-[40px] h-[40px]  `} />
                     </div>
                     <svg

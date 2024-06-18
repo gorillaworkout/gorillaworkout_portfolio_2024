@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import logoGW from '../../../public/logo/transparent_bg.png'
 import Image from "next/image";
+import bg_neon from '../../../public/background/bg_neon.jpg'
 const Loader = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -32,8 +33,8 @@ const Loader = () => {
   }, []);
 
   return (
-    <div className="loading-page flex justify-center items-center flex-col">
-      <div className="flex flex-row">
+    <div className="loading-page flex justify-center items-center flex-col ">
+      <div className="flex flex-row z-3">
         <svg id="svg" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512">
           <path
@@ -56,11 +57,9 @@ const Loader = () => {
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M32 32C14.3 32 0 46.3 0 64S14.3 96 32 96H160V448c0 17.7 14.3 32 32 32s32-14.3 32-32V96H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H192 32z" /></svg>
 
       </div>
-      <div className="absolute bottom-0 flex justify-center items-center w-full">
-        <p className="text-white tracking-widest">ENJOY!</p>
-      </div>
     </div>
   );
 };
 
 export default Loader;
+ 
