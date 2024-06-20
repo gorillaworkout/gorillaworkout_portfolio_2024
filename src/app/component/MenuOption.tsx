@@ -96,7 +96,7 @@ const MenuOption: React.FC = () => {
                     <div  ref={menuRounded} className={`achievement_id !z-20 p-4  top-[20%] left-[5%]  justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
                         <GrAchievement className={`text-white flex w-[40px] h-[40px]`} />
                     </div>
-                    <svg
+                    {/* <svg
                         id="dots_id"
                         className={`absolute bottom-5  ${isVisible ? "flex" : "hidden"} z-1`}
                         width="100"
@@ -147,13 +147,13 @@ const MenuOption: React.FC = () => {
                                 opacity="0"
                             />
                         </g>
-                    </svg>
+                    </svg> */}
                 </div>
                 <div className={`${isVisible ? "absolute" : "hidden"} bottom-0 right-[0%] h-[500px] w-[300px]`}>
                     <div   ref={menuRounded2} className={`achievement_id !z-20 p-4  top-0 left-[5%]  justify-center items-center rounded-full w-[70px] h-[70px] border rounded-circle ${isVisible ? "absolute" : "hidden"} hover:cursor-pointer`}>
                         <GrAchievement className={`text-white flex w-[40px] h-[40px]  `} />
                     </div>
-                    <svg
+                    {/* <svg
                         id="dots_id"
                         className={`absolute bottom-[30%]  ${isVisible ? "flex" : "hidden"} z-1`}
                         width="100"
@@ -218,7 +218,7 @@ const MenuOption: React.FC = () => {
                                 opacity="0.6"
                             />
                         </g>
-                    </svg>
+                    </svg> */}
                 </div>
             </div>
         </div>
